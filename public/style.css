@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(226, 234, 234);
+    text-align: center;
+}
+
+
+.main{
+
+    height: 13cm;
+    background-color: rgb(176, 211, 254);
+    border-radius: 10px;
+    width: 10cm;
+    margin-left: 13cm;
+    margin-top: 2cm;
+    border: solid rgb(0, 0, 0) 2px;
+
+}
+
+.main h2{
+
+    color: black;
+}
+
+.main form input{
+    height: 40px;
+    width: 9cm;
+    border-radius: 12px;
+    outline: none;
+}
+
+.main form button{
+
+    height: 1cm;
+    width: 4cm;
+    border-radius: 8px;
+}

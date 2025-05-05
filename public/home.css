@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+   background-color: transparent;
+}
+
+.container{
+
+    height: 3cm;
+    background-color: rgb(229, 208, 208);
+    width: 100%;
+}
+
+.container ul li{
+
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    margin: 8px;
+    
+  
+}
+
+.container ul li a{
+   
+    color: wheat;
+    text-decoration: none;
+    font-size: 22px;
+   float: left;
+   color: black;
+   margin-left: 2cm;
+ 
+ 
+}
