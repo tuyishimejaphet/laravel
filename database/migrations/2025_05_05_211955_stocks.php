@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down():void
     {
-        schema::dropIfExists('students');
+        schema::dropIfExists('stocks');
     }
 };
