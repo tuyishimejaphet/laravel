@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        schema::create('students',function(Blueprint $table){
-        $table->id();
-        $table->string('names');
-        $table->string('class');
-        $table->string('username');
-        $table->string('password');
-        $table->timestamps();
-        });
+        schema::create('stocks',function(Blueprint $table){
+            $table->id();
+            $table->string('name');
+            $table->string('address');
+            $table->string('email');
+            $table->string('password');
+            $table->timestamps();
+            });
     }
 
     /**

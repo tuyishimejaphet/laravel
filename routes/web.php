@@ -1,8 +1,10 @@
 <?php
-use App\Http\Controllers\homeController;
-use App\Http\Controllers\registerController;
-use App\Http\Controllers\schollController;
-use App\Http\Controllers\vavaController;
+// use App\Http\Controllers\homeController;
+// use App\Http\Controllers\registerController;
+//use App\Http\Controllers\schollController;
+//use App\Http\Controllers\vavaController;
+use App\Http\Controllers\newcontroller;
+use App\Models\student;
 
 use Illuminate\Support\Facades\Route;
 
@@ -22,61 +24,65 @@ Route::get('/index', function () {
     return view('index');
 });
 
-Route::get('/home', function () {
-    return view('home');
+// Route::get('/home', function () {
+//     return view('home');
+// });
+
+// Route::get('/form', function () {
+//     return view('form');
+// });
+
+// Route::post('/register', function () {
+//     return 'data sent';
+// });
+
+// Route::get('/form.blade.php', function () {
+//    return view('form');
+// });
+// Route::get('/home.blade.php', function () {
+//     return view('home');
+// });
+#Route::get('/index.blade.php', function () {
+ #   return view('index');
+#});
+
+#Route::get('/contact', function () {
+ #   return view('contact');
+#});
+
+#Route::get('/contact.blade.php', function () {
+ #   return view('contact');
+#});
+
+Route::get('/logou', function () {
+   return view('logou');
 });
 
-Route::get('/form', function () {
-    return view('form');
-});
+#Route::get('/home.blade.php', function () {
+ #   return view('logou');
+#});
 
-Route::post('/register', function () {
-    return 'data sent';
-});
 
-Route::get('/form.blade.php', function () {
-    return view('form');
-});
 
-Route::get('/index.blade.php', function () {
-    return view('index');
-});
+// Route::get('/cont',[homeController::class,'Apr']);
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+// Route::get('/reg',[registerController::class,'Main']);
 
-Route::get('/contact.blade.php', function () {
-    return view('contact');
-});
+// Route::get('/schoolpag',[schollController::class,'App']);
 
-Route::get('/logou.blade.php', function () {
-    return view('logou');
-});
+// Route::post('/regist',[homeController::class,'studentData']);
 
-Route::get('/home.blade.php', function () {
-    return view('logou');
-});
-
-Route::get('/log', function () {
-    return view('register');
-});
+#Route::get('/log', function () {
+   # return view('register');
+#});
 
 
 Route::post('/log',[registerController::class,'Main']);
 
-
-
-Route::get('/cont',[homeController::class,'Apr']);
-
-Route::get('/reg',[registerController::class,'Main']);
-
-Route::get('/schoolpage',[schollController::class,'App']);
-
-Route::get('/bu',[vavaController::class,'valentine']);
-
-
-
+Route::get('/news', function () {
+    return view('news');
+});
+Route::post('/new',[newcontroller::class,'sod']);
 
 
 
